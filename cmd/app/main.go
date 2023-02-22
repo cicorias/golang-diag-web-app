@@ -52,6 +52,7 @@ func main() {
 	http.HandleFunc("/", emitHeaders)
 	http.HandleFunc("/env", emitEnvironment)
 
+	fmt.Printf("server now listening on port 8088")
 	err := http.ListenAndServe(":8080", nil)
 	if errors.Is(err, http.ErrServerClosed) {
 		fmt.Printf("server closed\n")
