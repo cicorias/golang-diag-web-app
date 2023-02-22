@@ -23,3 +23,7 @@
 !*/
 
 !Dockerfile
+
+
+!.github/workflows/**/*.yml
+!.slsa-goreleaser.yml
